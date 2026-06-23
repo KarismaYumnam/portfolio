@@ -118,3 +118,36 @@ nav a:hover{
 .two_col_right {
     flex: 1;
 }
+
+@media (max-width: 768px) {
+    .two_col {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .two_col_left {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .two_col_right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .two_col_left {
+        height: 240px;
+    }
+
+    .two_col_right h2 {
+        font-size: 24px;
+    }
+
+    .two_col_right p {
+        font-size: 16px;
+    }
+}
