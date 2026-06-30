@@ -39,20 +39,19 @@ header h1 {
 }
 
 .title_container {
-    background: rgba(230, 244, 72, 0.823);   /* translucent white */
+    background: rgb(125, 208, 255);   /* translucent white */
     padding: 30px;
     border-radius: 8px;
     backdrop-filter: blur(6px);             /* optional glass effect */
     -webkit-backdrop-filter: blur(6px);     /* Safari */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     width: 100%;
 }
 
 .t1 {
     text-align: center;
     font-size: 24px;
-    font-weight: 400;
-    color: rgb(83, 15, 57);
+    font-weight: 'bold';
+    color: rgb(110, 0, 106);
 }
 nav {
     display: flex;
