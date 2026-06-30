@@ -39,7 +39,7 @@ header h1 {
 }
 
 .title_container {
-    background: rgb(125, 208, 255);   /* translucent white */
+    background: rgb(174, 210, 231);   /* translucent white */
     padding: 30px;
     border-radius: 8px;
     backdrop-filter: blur(6px);             /* optional glass effect */
@@ -50,8 +50,8 @@ header h1 {
 .t1 {
     text-align: center;
     font-size: 24px;
-    font-weight: 'bold';
-    color: rgb(110, 0, 106);
+    font-weight: 400;
+    color: rgb(87, 32, 240);
 }
 nav {
     display: flex;
