@@ -118,10 +118,12 @@ nav a:hover {
     font-weight: 700;
 }
 
+
+
 /* Two-column section */
 
 .two_col {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 30px auto;
     display: flex;
@@ -137,37 +139,42 @@ nav a:hover {
 }
 
 /* Use this only for the image/slideshow side */
-
 .two_col_image {
     position: relative;
     width: 100%;
-    max-width: 100%;
-    aspect-ratio: 6 / 5;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
 }
 
-.two_col_image img,
-.slide {
-    position: absolute;
-    inset: 0;
+/* Normal image should show */
+.two_col_image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    opacity: 0;
     display: block;
+}
+
+/* Only slideshow images should be hidden by default */
+.two_col_image .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
-.slide.active {
+.two_col_image .slide.active {
     opacity: 1;
 }
-
 /* Text side */
 
 .two_col_text {
     width: 100%;
     max-width: 100%;
     font-size: clamp(16px, 3vw, 18px);
+}
+p {
+    font-size: clamp(16px, 3vw, 18px);
+    margin-bottom: 20px;
 }
 
 /* Tablet */
