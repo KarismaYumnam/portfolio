@@ -46,6 +46,12 @@ header h1 {
     -webkit-backdrop-filter: blur(6px);     /* Safari */
     width: 100%;
 }
+.cyan_container {
+    background: rgba(123, 241, 243, 0.529);   /* translucent white */
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+}
 
 .t1 {
     text-align: center;
@@ -275,5 +281,154 @@ p {
 
     .two_col_image {
         aspect-ratio: 1 / 1;
+    }
+}
+
+
+/* Table CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+    width: 82%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0 55px;
+}
+
+.page-title {
+    font-size: clamp(33px, 3vw, 25px);
+    color: rgb(87, 32, 240);
+    font-weight: 800;
+    margin: 0 0 0 px;
+    letter-spacing: -1px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f8f8f8;
+    font-size: clamp(12px, 2.5vw, 22px);
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px 24px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: 800;
+    background: #fafafa;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+    text-align: center;
+    white-space: nowrap;
+}
+
+a {
+    color: #5f82ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer CSS */
+
+footer {
+    background: #456fc4;
+    color: white;
+    padding: 42px 0;
+}
+
+.footer-container {
+    width: 82%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-container p {
+    font-size: clamp(18px, 3vw, 24px);
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    font-size: clamp(16px, 3vw, 22px);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .page-container {
+        width: 92%;
+        padding-top: 25px;
+    }
+
+    .page-title {
+        margin-bottom: 22px;
+    }
+
+    th,
+    td {
+        padding: 12px 14px;
+        font-size: 16px;
+    }
+
+    table {
+        min-width: 700px;
+    }
+
+    .footer-container {
+        width: 92%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        min-width: 650px;
+    }
+
+    footer {
+        padding: 32px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
     }
 }
